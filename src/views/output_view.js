@@ -13,8 +13,9 @@ OutputView.prototype.bindEvents = function () {
 };
 
 OutputView.prototype.render = function () {
-  this.data.forEach((continent) => {
-    const filmDetails = new FilmDetails(this.data, continent);
+  console.log(this.data);
+  this.data.forEach((film) => {
+    const filmDetails = new FilmDetails(this.data, film);
     filmDetails.render();
   });
 };
