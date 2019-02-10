@@ -15,7 +15,7 @@ OutputView.prototype.bindEvents = function () {
 OutputView.prototype.render = function () {
   console.log(this.data);
   this.data.forEach((film) => {
-    const filmDetails = new FilmDetails(this.data, film);
+    const filmDetails = new FilmDetails(this.container, film);
     filmDetails.render();
   });
 };
