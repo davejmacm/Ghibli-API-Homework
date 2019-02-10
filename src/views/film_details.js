@@ -42,7 +42,7 @@ FilmDetails.prototype.createFilmDesc = function () {
 FilmDetails.prototype.createFilmDate = function () {
   const filmDate = document.createElement('p');
   filmDate.classList.add('date');
-  filmDate.textContent = this.film.date;
+  filmDate.textContent = this.film.release_date;
   return filmDate;
 };
 
